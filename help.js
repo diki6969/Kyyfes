@@ -353,7 +353,9 @@ return`
  ${no++} ➳ ${prefix}audio${ad++}
  ${no++} ➳ ${prefix}audio${ad++}
  
- 𝙁𝙐𝙉 𝙈𝙀𝙉𝙐 
+ 𝙁𝙐𝙉 𝙈𝙀𝙉𝙐
+ ${no++} ➳ ${prefix}aidraw
+ ${no++} ➳ ${prefix}ai <apa>
  ${no++} ➳ ${prefix}goblokcek 
  ${no++} ➳ ${prefix}jelekcek 
  ${no++} ➳ ${prefix}gaycek

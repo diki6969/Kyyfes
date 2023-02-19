@@ -2354,6 +2354,20 @@ var text_encode =`*Hasil Result*
 reply(text_encode)
 }
 break
+case 'ai':{
+if (!q) return reply(`Example :\n${prefix+command} apa itu root`)
+reply(mess.wait)
+var openai = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=${setting.api_lolkey}&text=${q}&user=user-unique-id`)
+var hasilyna = *Pertanyaan*
+${q}
+
+*Jawaban*
+${result}
+
+ChatGPT For Whatsapp By IkyyOFC
+reply(hasilyna)
+}
+break
 case 'debase64':{
 if (!q) return reply(`Example :\n${prefix+command} cA==`)
 reply(mess.wait)
@@ -3398,7 +3412,8 @@ case 'thighs':
 case 'yuri':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
-let cndn = await fetchJson(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/${command}.json`)
+let hnhwh = await fetchJson(`https://raw.githubusercontent.com/diki6969/data-danzzapi.xyz/main/nsfw/${command}.json`)
+let cndn = hnhwh.url
 let random = cndn[Math.floor(Math.random() * cndn.length)]
 conn.sendMessage(m.chat, { image: { url: random }, caption: `Nih Kak` }, { quoted: fakekirbotz })
 }
