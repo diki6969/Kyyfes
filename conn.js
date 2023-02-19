@@ -3412,10 +3412,9 @@ case 'thighs':
 case 'yuri':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 if (cekUser("premium", sender) == false) return reply(mess.OnlyPrem)
-let hnhwh = await fetchJson(`https://raw.githubusercontent.com/diki6969/data-danzzapi.xyz/main/nsfw/${command}.json`)
-let cndn = hnhwh.url
+let cndn = await fetchJson(`https://raw.githubusercontent.com/diki6969/data-danzzapi.xyz/main/nsfw/${command}.json`).url
 let random = cndn[Math.floor(Math.random() * cndn.length)]
-conn.sendMessage(m.chat, { image: { url: random }, caption: `Nih Kak` }, { quoted: fakekirbotz })
+conn.sendMessage(m.chat, { image: { url: random }, caption: `Nih Kak🤤` }, { quoted: fakekirbotz })
 }
 break
 case 'jadibot': {
