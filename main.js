@@ -1,4 +1,3 @@
-require("http").createServer((_, res) => res.end("WOY KONTOL!")).listen(8080)
 "use strict";
 const { default: makeWASocket, DisconnectReason, useSingleFileAuthState, makeInMemoryStore, downloadContentFromMessage, jidDecode, generateForwardMessageContent, generateWAMessageFromContent } = require("@adiwajshing/baileys")
 const fs = require("fs");
