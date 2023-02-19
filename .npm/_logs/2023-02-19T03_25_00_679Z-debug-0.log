@@ -1,0 +1,389 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.4.2
+2 info using node@v18.14.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 3ms
+10 timing config:load:file:/home/container/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 0ms
+15 timing config:load Completed in 9ms
+16 timing npm:load:configload Completed in 9ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install
+20 verbose argv "install"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:display Completed in 11ms
+24 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2023-02-19T03_25_00_679Z-
+25 verbose logfile /home/container/.npm/_logs/2023-02-19T03_25_00_679Z-debug-0.log
+26 timing npm:load:logFile Completed in 4ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 27ms
+30 timing arborist:ctor Completed in 0ms
+31 silly logfile done cleaning log files
+32 timing arborist:ctor Completed in 0ms
+33 timing idealTree:init Completed in 434ms
+34 timing idealTree:userRequests Completed in 0ms
+35 silly idealTree buildDeps
+36 timing idealTree:#root Completed in 0ms
+37 silly fetch manifest libsignal@git+https://github.com/adiwajshing/libsignal-node
+38 http fetch GET 200 https://registry.npmjs.org/npm 511ms (cache miss)
+39 silly placeDep ROOT libsignal@2.0.1 REPLACE for: @adiwajshing/baileys@4.4.0 want: git+https://github.com/adiwajshing/libsignal-node
+40 timing idealTree:node_modules/@adiwajshing/baileys Completed in 1075ms
+41 timing idealTree:node_modules/libsignal Completed in 0ms
+42 timing idealTree:buildDeps Completed in 1077ms
+43 timing idealTree:fixDepFlags Completed in 2ms
+44 timing idealTree Completed in 1517ms
+45 timing reify:loadTrees Completed in 1518ms
+46 timing reify:diffTrees Completed in 3ms
+47 silly reify mark retired [
+47 silly reify   '/home/container/node_modules/levenshtein-edit-distance',
+47 silly reify   '/home/container/node_modules/.bin/levenshtein-edit-distance'
+47 silly reify ]
+48 silly reify mark retired [ '/home/container/node_modules/libsignal' ]
+49 silly reify mark retired [
+49 silly reify   '/home/container/node_modules/pino',
+49 silly reify   '/home/container/node_modules/.bin/pino'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/home/container/node_modules/protobufjs',
+50 silly reify   '/home/container/node_modules/.bin/pbjs',
+50 silly reify   '/home/container/node_modules/.bin/pbts'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/home/container/node_modules/qrcode',
+51 silly reify   '/home/container/node_modules/.bin/qrcode'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/home/container/node_modules/qrcode-terminal',
+52 silly reify   '/home/container/node_modules/.bin/qrcode-terminal'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/home/container/node_modules/similarity',
+53 silly reify   '/home/container/node_modules/.bin/similarity'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/home/container/node_modules/which',
+54 silly reify   '/home/container/node_modules/.bin/which'
+54 silly reify ]
+55 silly reify moves {
+55 silly reify   '/home/container/node_modules/levenshtein-edit-distance': '/home/container/node_modules/.levenshtein-edit-distance-XXna7B5G',
+55 silly reify   '/home/container/node_modules/.bin/levenshtein-edit-distance': '/home/container/node_modules/.bin/.levenshtein-edit-distance-Fqcnv5rc',
+55 silly reify   '/home/container/node_modules/libsignal': '/home/container/node_modules/.libsignal-mQOErmg7',
+55 silly reify   '/home/container/node_modules/pino': '/home/container/node_modules/.pino-W4hvP06Q',
+55 silly reify   '/home/container/node_modules/.bin/pino': '/home/container/node_modules/.bin/.pino-XdK6afH4',
+55 silly reify   '/home/container/node_modules/protobufjs': '/home/container/node_modules/.protobufjs-a46ldCGB',
+55 silly reify   '/home/container/node_modules/.bin/pbjs': '/home/container/node_modules/.bin/.pbjs-NzJRM0ey',
+55 silly reify   '/home/container/node_modules/.bin/pbts': '/home/container/node_modules/.bin/.pbts-ycRLgpmv',
+55 silly reify   '/home/container/node_modules/qrcode': '/home/container/node_modules/.qrcode-1mCmfTHy',
+55 silly reify   '/home/container/node_modules/.bin/qrcode': '/home/container/node_modules/.bin/.qrcode-teBEV8nx',
+55 silly reify   '/home/container/node_modules/qrcode-terminal': '/home/container/node_modules/.qrcode-terminal-53hvKJrm',
+55 silly reify   '/home/container/node_modules/.bin/qrcode-terminal': '/home/container/node_modules/.bin/.qrcode-terminal-78EnKQFw',
+55 silly reify   '/home/container/node_modules/similarity': '/home/container/node_modules/.similarity-oD73Knx6',
+55 silly reify   '/home/container/node_modules/.bin/similarity': '/home/container/node_modules/.bin/.similarity-Md8WY29Z',
+55 silly reify   '/home/container/node_modules/which': '/home/container/node_modules/.which-a0RAFcK4',
+55 silly reify   '/home/container/node_modules/.bin/which': '/home/container/node_modules/.bin/.which-tv7QeygD'
+55 silly reify }
+56 timing reify:retireShallow Completed in 7ms
+57 timing reify:createSparse Completed in 0ms
+58 timing reify:loadBundles Completed in 0ms
+59 silly audit bulk request {
+59 silly audit   'ansi-regex': [ '5.0.1' ],
+59 silly audit   'ansi-styles': [ '4.3.0' ],
+59 silly audit   async: [ '3.2.4' ],
+59 silly audit   asynckit: [ '0.4.0' ],
+59 silly audit   'atomic-sleep': [ '1.0.0' ],
+59 silly audit   axios: [ '0.24.0' ],
+59 silly audit   boolbase: [ '1.0.0' ],
+59 silly audit   'cacheable-lookup': [ '5.0.4' ],
+59 silly audit   'cacheable-request': [ '7.0.2' ],
+59 silly audit   camelcase: [ '5.3.1' ],
+59 silly audit   chalk: [ '4.1.2' ],
+59 silly audit   cheerio: [ '1.0.0-rc.12' ],
+59 silly audit   'cheerio-select': [ '2.1.0' ],
+59 silly audit   'cli-color': [ '0.3.2' ],
+59 silly audit   cliui: [ '6.0.0' ],
+59 silly audit   clone: [ '2.1.2' ],
+59 silly audit   'clone-response': [ '1.0.3' ],
+59 silly audit   'mimic-response': [ '1.0.1', '3.1.0' ],
+59 silly audit   clui: [ '0.3.6' ],
+59 silly audit   'color-name': [ '1.1.4' ],
+59 silly audit   'color-convert': [ '2.0.1' ],
+59 silly audit   colors: [ '1.4.0' ],
+59 silly audit   'combined-stream': [ '1.0.8' ],
+59 silly audit   'content-type': [ '1.0.4' ],
+59 silly audit   crypto: [ '1.0.1' ],
+59 silly audit   'css-select': [ '5.1.0' ],
+59 silly audit   'css-what': [ '6.1.0' ],
+59 silly audit   'curve25519-js': [ '0.0.4' ],
+59 silly audit   d: [ '0.1.1', '1.0.1' ],
+59 silly audit   debug: [ '4.3.4' ],
+59 silly audit   decamelize: [ '1.2.0' ],
+59 silly audit   'decompress-response': [ '6.0.0' ],
+59 silly audit   'defer-to-connect': [ '2.0.1' ],
+59 silly audit   'delayed-stream': [ '1.0.0' ],
+59 silly audit   dijkstrajs: [ '1.0.2' ],
+59 silly audit   'dom-serializer': [ '2.0.0' ],
+59 silly audit   domelementtype: [ '2.3.0' ],
+59 silly audit   domhandler: [ '5.0.3' ],
+59 silly audit   domutils: [ '3.0.1' ],
+59 silly audit   duplexify: [ '4.1.2' ],
+59 silly audit   'emoji-regex': [ '8.0.0' ],
+59 silly audit   'encode-utf8': [ '1.0.3' ],
+59 silly audit   'end-of-stream': [ '1.4.4' ],
+59 silly audit   entities: [ '4.4.0' ],
+59 silly audit   'es5-ext': [ '0.10.62' ],
+59 silly audit   'es6-symbol': [ '3.1.3', '2.0.1' ],
+59 silly audit   'es6-iterator': [ '2.0.3', '0.1.3' ],
+59 silly audit   'es6-weak-map': [ '0.1.4' ],
+59 silly audit   'event-emitter': [ '0.3.5' ],
+59 silly audit   ext: [ '1.7.0' ],
+59 silly audit   type: [ '2.7.2', '1.2.0' ],
+59 silly audit   'fast-redact': [ '3.1.2' ],
+59 silly audit   'file-type': [ '16.5.4' ],
+59 silly audit   'find-up': [ '4.1.0' ],
+59 silly audit   'fluent-ffmpeg': [ '2.1.2' ],
+59 silly audit   'follow-redirects': [ '1.15.2' ],
+59 silly audit   'form-data': [ '4.0.0' ],
+59 silly audit   'futoin-hkdf': [ '1.5.1' ],
+59 silly audit   'get-caller-file': [ '2.0.5' ],
+59 silly audit   'get-stream': [ '5.2.0' ],
+59 silly audit   got: [ '11.8.5' ],
+59 silly audit   'has-flag': [ '4.0.0' ],
+59 silly audit   htmlparser2: [ '8.0.1' ],
+59 silly audit   'http-cache-semantics': [ '4.1.0' ],
+59 silly audit   'http2-wrapper': [ '1.0.3' ],
+59 silly audit   'human-readable': [ '0.2.1' ],
+59 silly audit   ieee754: [ '1.2.1' ],
+59 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+59 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+59 silly audit   isexe: [ '2.0.0' ],
+59 silly audit   'json-buffer': [ '3.0.1' ],
+59 silly audit   'levenshtein-edit-distance': [ '2.0.5' ],
+59 silly audit   keyv: [ '4.5.2' ],
+59 silly audit   protobufjs: [ '6.11.3', '6.8.8' ],
+59 silly audit   '@types/node': [ '18.11.9', '10.17.60' ],
+59 silly audit   'locate-path': [ '5.0.0' ],
+59 silly audit   long: [ '4.0.0' ],
+59 silly audit   'lowercase-keys': [ '2.0.0' ],
+59 silly audit   'lru-queue': [ '0.1.0' ],
+59 silly audit   'media-typer': [ '1.1.0' ],
+59 silly audit   memoizee: [ '0.3.10' ],
+59 silly audit   'next-tick': [ '0.2.2', '1.1.0' ],
+59 silly audit   'mime-db': [ '1.52.0' ],
+59 silly audit   'mime-types': [ '2.1.35' ],
+59 silly audit   moment: [ '2.29.4' ],
+59 silly audit   'moment-timezone': [ '0.5.39' ],
+59 silly audit   ms: [ '2.1.2' ],
+59 silly audit   'music-metadata': [ '7.13.0' ],
+59 silly audit   'node-cache': [ '5.1.2' ],
+59 silly audit   'node-fetch': [ '2.6.1' ],
+59 silly audit   'node-webpmux': [ '3.1.3' ],
+59 silly audit   'normalize-url': [ '6.1.0' ],
+59 silly audit   'nth-check': [ '2.1.1' ],
+59 silly audit   'on-exit-leak-free': [ '0.2.0' ],
+59 silly audit   once: [ '1.4.0' ],
+59 silly audit   'p-cancelable': [ '2.1.1' ],
+59 silly audit   'p-limit': [ '2.3.0' ],
+59 silly audit   'p-locate': [ '4.1.0' ],
+59 silly audit   'p-try': [ '2.2.0' ],
+59 silly audit   parse5: [ '7.1.1' ],
+59 silly audit   'parse5-htmlparser2-tree-adapter': [ '7.0.0' ],
+59 silly audit   path: [ '0.12.7' ],
+59 silly audit   'path-exists': [ '4.0.0' ],
+59 silly audit   'peek-readable': [ '4.1.0' ],
+59 silly audit   pino: [ '7.11.0' ],
+59 silly audit   'pino-abstract-transport': [ '0.5.0' ],
+59 silly audit   'pino-std-serializers': [ '4.0.0' ],
+59 silly audit   pngjs: [ '5.0.0' ],
+59 silly audit   process: [ '0.11.10' ],
+59 silly audit   'process-warning': [ '1.0.0' ],
+59 silly audit   pump: [ '3.0.0' ],
+59 silly audit   qrcode: [ '1.5.1' ],
+59 silly audit   'qrcode-terminal': [ '0.12.0' ],
+59 silly audit   'quick-format-unescaped': [ '4.0.4' ],
+59 silly audit   'quick-lru': [ '5.1.1' ],
+59 silly audit   'readable-stream': [ '3.6.0' ],
+59 silly audit   'readable-web-to-node-stream': [ '3.0.2' ],
+59 silly audit   'real-require': [ '0.1.0' ],
+59 silly audit   'require-directory': [ '2.1.1' ],
+59 silly audit   'require-main-filename': [ '2.0.0' ],
+59 silly audit   'resolve-alpn': [ '1.2.1' ],
+59 silly audit   responselike: [ '2.0.1' ],
+59 silly audit   'safe-buffer': [ '5.2.1' ],
+59 silly audit   'safe-stable-stringify': [ '2.4.1' ],
+59 silly audit   'scrape-primbon': [ '1.1.0' ],
+59 silly audit   'set-blocking': [ '2.0.0' ],
+59 silly audit   similarity: [ '1.2.1' ],
+59 silly audit   'sonic-boom': [ '2.8.0' ],
+59 silly audit   split2: [ '4.1.0' ],
+59 silly audit   'stream-shift': [ '1.0.1' ],
+59 silly audit   'string-width': [ '4.2.3' ],
+59 silly audit   string_decoder: [ '1.3.0' ],
+59 silly audit   'strip-ansi': [ '6.0.1' ],
+59 silly audit   strtok3: [ '6.3.0' ],
+59 silly audit   'supports-color': [ '7.2.0' ],
+59 silly audit   'thread-stream': [ '0.15.2' ],
+59 silly audit   'timers-ext': [ '0.1.7' ],
+59 silly audit   'token-types': [ '4.2.1' ],
+59 silly audit   util: [ '0.10.4' ],
+59 silly audit   'util-deprecate': [ '1.0.2' ],
+59 silly audit   'which-module': [ '2.0.0' ],
+59 silly audit   which: [ '1.3.1' ],
+59 silly audit   'wrap-ansi': [ '6.2.0' ],
+59 silly audit   wrappy: [ '1.0.2' ],
+59 silly audit   ws: [ '8.11.0' ],
+59 silly audit   y18n: [ '4.0.3' ],
+59 silly audit   yargs: [ '15.4.1' ],
+59 silly audit   'yargs-parser': [ '18.1.3' ],
+59 silly audit   zod: [ '3.19.1' ],
+59 silly audit   '@adiwajshing/baileys': [ '4.4.0' ],
+59 silly audit   '@adiwajshing/keyed-db': [ '0.2.4' ],
+59 silly audit   '@bochilteam/scraper': [ '3.0.0' ],
+59 silly audit   '@hapi/boom': [ '9.1.4' ],
+59 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+59 silly audit   '@hapi/hoek': [ '9.3.0' ],
+59 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+59 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+59 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+59 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+59 silly audit   '@protobufjs/float': [ '1.0.2' ],
+59 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+59 silly audit   '@protobufjs/path': [ '1.1.2' ],
+59 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+59 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+59 silly audit   '@sindresorhus/is': [ '4.6.0' ],
+59 silly audit   '@szmarczak/http-timer': [ '4.0.6' ],
+59 silly audit   '@tokenizer/token': [ '0.3.0' ],
+59 silly audit   '@types/cacheable-request': [ '6.0.3' ],
+59 silly audit   '@types/http-cache-semantics': [ '4.0.1' ],
+59 silly audit   '@types/keyv': [ '3.1.4' ],
+59 silly audit   '@types/long': [ '4.0.2' ],
+59 silly audit   '@types/responselike': [ '1.0.0' ],
+59 silly audit   libsignal: [ '2.0.1' ]
+59 silly audit }
+60 http fetch GET 200 https://registry.npmjs.org/protobufjs 87ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/protobufjs 103ms (cache miss)
+62 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 194ms
+63 timing auditReport:getReport Completed in 198ms
+64 silly audit report {
+64 silly audit report   'http-cache-semantics': [
+64 silly audit report     {
+64 silly audit report       id: 1090532,
+64 silly audit report       url: 'https://github.com/advisories/GHSA-rc47-6667-2j5j',
+64 silly audit report       title: 'http-cache-semantics vulnerable to Regular Expression Denial of Service',
+64 silly audit report       severity: 'high',
+64 silly audit report       vulnerable_versions: '<4.1.1',
+64 silly audit report       cwe: [Array],
+64 silly audit report       cvss: [Object]
+64 silly audit report     }
+64 silly audit report   ],
+64 silly audit report   'node-fetch': [
+64 silly audit report     {
+64 silly audit report       id: 1089425,
+64 silly audit report       url: 'https://github.com/advisories/GHSA-r683-j2x4-v87g',
+64 silly audit report       title: 'node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor',
+64 silly audit report       severity: 'high',
+64 silly audit report       vulnerable_versions: '<2.6.7',
+64 silly audit report       cwe: [Array],
+64 silly audit report       cvss: [Object]
+64 silly audit report     }
+64 silly audit report   ]
+64 silly audit report }
+65 timing metavuln:cache:get:security-advisory:http-cache-semantics:RZkip6EYJtyEt/UL3+okkoXm+B53JgBI1sYCHIB0OBaifpHyBIKE6OFHLGc/tWG9l9E9gUJf1PslcXfSi2KE9Q== Completed in 2ms
+66 timing metavuln:cache:get:security-advisory:node-fetch:d/3kW4mrbFfVNEl9k26cue5i87Qe5Wn2bo7f/GBgX4n3y5PUtc9MGdKyBQzvQ0CUd+udC0dbXjMI/26LovYfyQ== Completed in 2ms
+67 http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 36ms (cache miss)
+68 timing metavuln:packument:http-cache-semantics Completed in 37ms
+69 timing metavuln:load:security-advisory:http-cache-semantics:1090532 Completed in 2ms
+70 http fetch GET 200 https://registry.npmjs.org/node-fetch 43ms (cache miss)
+71 timing metavuln:packument:node-fetch Completed in 44ms
+72 timing metavuln:load:security-advisory:node-fetch:1089425 Completed in 4ms
+73 timing metavuln:cache:put:security-advisory:http-cache-semantics:RZkip6EYJtyEt/UL3+okkoXm+B53JgBI1sYCHIB0OBaifpHyBIKE6OFHLGc/tWG9l9E9gUJf1PslcXfSi2KE9Q== Completed in 17ms
+74 timing metavuln:calculate:security-advisory:http-cache-semantics:1090532 Completed in 56ms
+75 timing metavuln:cache:put:security-advisory:node-fetch:d/3kW4mrbFfVNEl9k26cue5i87Qe5Wn2bo7f/GBgX4n3y5PUtc9MGdKyBQzvQ0CUd+udC0dbXjMI/26LovYfyQ== Completed in 12ms
+76 timing metavuln:calculate:security-advisory:node-fetch:1089425 Completed in 60ms
+77 timing metavuln:cache:get:security-advisory:cacheable-request:F7t+DvBbLUOBbBdSPhRG0Mq9l20mb4cWArku3Qd4yGfXUouPetshca04e8LPHOD4MVgTXbV40pmZifdKtETeUw== Completed in 2ms
+78 http fetch GET 200 https://registry.npmjs.org/cacheable-request 46ms (cache miss)
+79 timing metavuln:packument:cacheable-request Completed in 46ms
+80 timing metavuln:load:security-advisory:cacheable-request:RZkip6EYJtyEt/UL3+okkoXm+B53JgBI1sYCHIB0OBaifpHyBIKE6OFHLGc/tWG9l9E9gUJf1PslcXfSi2KE9Q== Completed in 4ms
+81 timing metavuln:cache:put:security-advisory:cacheable-request:F7t+DvBbLUOBbBdSPhRG0Mq9l20mb4cWArku3Qd4yGfXUouPetshca04e8LPHOD4MVgTXbV40pmZifdKtETeUw== Completed in 7ms
+82 timing metavuln:calculate:security-advisory:cacheable-request:RZkip6EYJtyEt/UL3+okkoXm+B53JgBI1sYCHIB0OBaifpHyBIKE6OFHLGc/tWG9l9E9gUJf1PslcXfSi2KE9Q== Completed in 57ms
+83 timing auditReport:init Completed in 122ms
+84 timing reify:audit Completed in 321ms
+85 http fetch GET 200 https://codeload.github.com/adiwajshing/libsignal-node/tar.gz/11dbd962ea108187c79a7c46fe4d6f790e23da97 290ms (cache miss)
+86 timing arborist:ctor Completed in 0ms
+87 timing reifyNode:node_modules/libsignal Completed in 429ms
+88 http fetch GET 200 https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.3.tgz 329ms (cache miss)
+89 timing reifyNode:node_modules/protobufjs Completed in 433ms
+90 http fetch GET 200 https://registry.npmjs.org/protobufjs/-/protobufjs-6.8.8.tgz 321ms (cache miss)
+91 timing reifyNode:node_modules/libsignal/node_modules/protobufjs Completed in 438ms
+92 http fetch GET 200 https://registry.npmjs.org/qrcode 641ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/qrcode-terminal 643ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/which 646ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/similarity 685ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/levenshtein-edit-distance 686ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/which/-/which-1.3.1.tgz 47ms (cache miss)
+98 timing reifyNode:node_modules/which Completed in 708ms
+99 http fetch GET 200 https://registry.npmjs.org/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz 66ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/pino 709ms (cache miss)
+101 timing reifyNode:node_modules/qrcode-terminal Completed in 726ms
+102 http fetch GET 200 https://registry.npmjs.org/qrcode/-/qrcode-1.5.1.tgz 81ms (cache miss)
+103 timing reifyNode:node_modules/qrcode Completed in 731ms
+104 http fetch GET 200 https://registry.npmjs.org/pino/-/pino-7.11.0.tgz 84ms (cache miss)
+105 timing reifyNode:node_modules/pino Completed in 810ms
+106 http fetch GET 200 https://registry.npmjs.org/levenshtein-edit-distance/-/levenshtein-edit-distance-2.0.5.tgz 622ms (cache miss)
+107 timing reifyNode:node_modules/levenshtein-edit-distance Completed in 1321ms
+108 http fetch GET 200 https://registry.npmjs.org/similarity/-/similarity-1.2.1.tgz 637ms (cache miss)
+109 timing reifyNode:node_modules/similarity Completed in 1332ms
+110 timing reify:unpack Completed in 1333ms
+111 timing reify:unretire Completed in 5ms
+112 timing build:queue Completed in 1ms
+113 timing build:link:node_modules/levenshtein-edit-distance Completed in 5ms
+114 timing build:link:node_modules/pino Completed in 5ms
+115 timing build:link:node_modules/qrcode Completed in 4ms
+116 timing build:link:node_modules/protobufjs Completed in 5ms
+117 timing build:link:node_modules/qrcode-terminal Completed in 4ms
+118 timing build:link:node_modules/which Completed in 4ms
+119 timing build:link:node_modules/similarity Completed in 4ms
+120 timing build:link:node_modules/libsignal/node_modules/protobufjs Completed in 4ms
+121 timing build:link Completed in 5ms
+122 info run protobufjs@6.11.3 postinstall node_modules/protobufjs node scripts/postinstall
+123 info run protobufjs@6.8.8 postinstall node_modules/libsignal/node_modules/protobufjs node scripts/postinstall
+124 info run protobufjs@6.11.3 postinstall { code: 0, signal: null }
+125 timing build:run:postinstall:node_modules/protobufjs Completed in 57ms
+126 info run protobufjs@6.8.8 postinstall { code: 0, signal: null }
+127 timing build:run:postinstall:node_modules/libsignal/node_modules/protobufjs Completed in 58ms
+128 timing build:run:postinstall Completed in 66ms
+129 timing build:deps Completed in 72ms
+130 timing build Completed in 73ms
+131 timing reify:build Completed in 73ms
+132 timing reify:trash Completed in 14ms
+133 timing reify:save Completed in 82ms
+134 timing reify Completed in 3109ms
+135 silly CHANGE node_modules/which
+136 silly CHANGE node_modules/similarity
+137 silly CHANGE node_modules/qrcode-terminal
+138 silly CHANGE node_modules/qrcode
+139 silly CHANGE node_modules/protobufjs
+140 silly CHANGE node_modules/pino
+141 silly CHANGE node_modules/libsignal
+142 silly CHANGE node_modules/libsignal/node_modules/protobufjs
+143 silly CHANGE node_modules/levenshtein-edit-distance
+144 timing command:install Completed in 3120ms
+145 notice
+145 notice New [33mminor[39m version of npm available! [31m9.4.2[39m -> [32m9.5.0[39m
+145 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v9.5.0[39m
+145 notice Run [32mnpm install -g npm@9.5.0[39m to update!
+145 notice
+146 verbose exit 0
+147 timing npm Completed in 3160ms
+148 info ok
