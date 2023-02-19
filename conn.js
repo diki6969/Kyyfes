@@ -2358,13 +2358,13 @@ case 'ai':{
 if (!q) return reply(`Example :\n${prefix+command} apa itu root`)
 reply(mess.wait)
 var openai = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=${setting.api_lolkey}&text=${q}&user=user-unique-id`)
-var hasilyna = *Pertanyaan*
+var hasilyna = `*Pertanyaan*
 ${q}
 
 *Jawaban*
-${result}
+${openai.result}
 
-ChatGPT For Whatsapp By IkyyOFC
+ChatGPT For Whatsapp By IkyyOFC`
 reply(hasilyna)
 }
 break
